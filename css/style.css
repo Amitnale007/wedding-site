@@ -406,7 +406,7 @@ img {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 16px;
-	color: #674ea7;
+	color: purple;
 	margin: 16px;
 	text-align: center;
 }
@@ -418,7 +418,7 @@ img {
 	flex-wrap: wrap;
 	width: 100%;
 	background-color: #efc3ed;
-	border-radius: 10%;
+	border-radius: 0%;
   }
   
   .data {
@@ -428,6 +428,7 @@ img {
 
 	padding: 30px;
 	margin-left: 100px; 
+	
 	
 	/* Default margin for larger screens */
   
@@ -470,8 +471,18 @@ img {
 	text-align: center;
 	/* min-height:100%; */
 
-
 }
+
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+}
+
 .img{
 	min-width: 100%;
 	min-height: 100%;
@@ -564,6 +575,7 @@ body {
 	color: #874562;
 	font-weight: 900;
 	font-family: 'Raleway', sans-serif;
+	
 }
 
 .place {
@@ -576,6 +588,7 @@ body {
 	text-align: center;
 	font-size: 16px;
 	margin: 24px;
+
 }
 
 .phone {
@@ -630,3 +643,5 @@ a {
 	color: #674ea7;
 	text-align: center;
 }
+
+
