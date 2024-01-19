@@ -411,6 +411,34 @@ img {
 	text-align: center;
 }
 
+
+.container-fluid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #efc3ed;
+  }
+  
+  .data {
+	text-align: center;
+	height: 200px;
+	width: 200px;
+
+	padding: 30px;
+	margin-left: 100px; 
+	
+	/* Default margin for larger screens */
+  
+	/* Adjust margin for smaller screens using media query */
+	@media (max-width: 768px) {
+	  margin-left: 0;
+	  margin-bottom: 2px;
+	  border-bottom: 1px black solid;
+	}
+  }
+  
+
 .title h3 {
 	font-weight: 300;
 	text-transform: uppercase;
