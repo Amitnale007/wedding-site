@@ -99,12 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("openMapButton")
     .addEventListener("click", function () {
-      // Replace latitude and longitude with the desired coordinates
-      var latitude = 19.8234100427122;
-      var longitude = 74.40925771550825;
+      // Replace destination with the desired address or coordinates
+      var destination = "19.823417,74.409250";
 
-      // Create a Google Maps URL with the specified location
-      var mapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+      // Create a Google Maps URL for directions to the specified location
+      var mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+        destination
+      )}`;
 
       // Open the URL in a new tab or window
       window.open(mapsUrl, "_blank");
