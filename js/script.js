@@ -91,3 +91,22 @@ console.log(
   `%cShaadi me zaroor aana!\n\n`,
   "color: yellow; background:tomato; font-size: 24pt; font-weight: bold"
 );
+
+//code for map
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Add a click event listener to the button
+  document
+    .getElementById("openMapButton")
+    .addEventListener("click", function () {
+      // Replace latitude and longitude with the desired coordinates
+      var latitude = 19.8234100427122;
+      var longitude = 74.40925771550825;
+
+      // Create a Google Maps URL with the specified location
+      var mapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+
+      // Open the URL in a new tab or window
+      window.open(mapsUrl, "_blank");
+    });
+});

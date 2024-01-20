@@ -432,13 +432,9 @@ img {
 	height: 200px;
 	width: 200px;
 
-	padding: 30px;
-	margin-left: 100px; 
+	padding: 50px;
+
 	
-	
-	/* Default margin for larger screens */
-  
-	/* Adjust margin for smaller screens using media query */
 	@media (max-width: 768px) {
 	  margin-left: 0;
 	  margin-bottom: 2px;
