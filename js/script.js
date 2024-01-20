@@ -29,22 +29,21 @@ var x = setInterval(function () {
   document.getElementById("time").innerHTML =
     "<div class='container'><div class='days block'>" +
     days +
-    "<br>Days</div>" +
+    "<br>दिवस</div>" +
     "<div class='hours block'>" +
     hours +
-    "<br>Hours</div>" +
+    "<br>तास</div>" +
     "<div class='minutes block'>" +
     minutes +
-    "<br>Minutes</div>" +
+    "<br>मिनीट</div>" +
     "<div class='seconds block'>" +
     seconds +
-    "<br>Seconds</div></div>";
+    "<br>सेकंद</div></div>";
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("time").innerHTML =
-      "एक खुशियों भरी शादीशुदा जिंदगी मुबारक हो!";
+    document.getElementById("time").innerHTML = "Happy Married Life";
   }
 }, 1000);
 

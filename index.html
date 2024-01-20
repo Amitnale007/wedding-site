@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
    <link rel="shortcut icon" href="favicon.png" type="image/png">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -41,13 +43,15 @@
    <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration">
    <section id="media"></section>
    <div class="wrap" >
-      <div class="title fade-in">
+      <div class="title">
+         <div class="fade-in">
          <h1 >अमोल नळे</h1>
          <div class=" actions ">
             <div class="venue"><strong>शुभ विवाह</strong></div>
          </div>
          <!-- <h2>संग</h2> -->
          <h1>ऋतुजा सोनवणे</h1>
+      </div>
          <audio controls>
             <source src="./assets/mp3/background.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -59,7 +63,7 @@
       </div>
    </div>
 
-   <img src="./assets/img/title.jpg" class="img" alt="Responsive image">
+   <img src="./assets/img/title.jpg" class="img " alt="Responsive image">
 
    <div id="time"></div>
 
@@ -98,7 +102,7 @@
    <p class="happiness">निमंत्रक<br><span class="inviter"><b>समस्त नळे परिवार</b><br></span>
       <!-- <a href="https://twitter.com/Vinit_Shahdeo" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></p> -->
       <!-- partial -->
-
+   <div id="map" class="map"></div>
 
 
 
@@ -107,6 +111,18 @@
       <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
       <script src="./js/script.js"></script>
       <script src="./js/animation.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+      <script>
+         var map = L.map('map').setView([19.823517320243944, 74.40874809184514], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([19.823517320243944, 74.40874809184514]).addTo(map)
+    .bindPopup('वक्रतुंड मंगल कार्यालय,पोहेगाव')
+    .openPopup();
+      </script>
 </body>
 
 </html>
