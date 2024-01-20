@@ -367,6 +367,12 @@ img {
 	}
 }
 
+@font-face {
+	font-family: 'kalam';
+	src: url('../assets/fonts/Kalam-Bold.woff2') format('woff2');
+  }
+  
+
 .top-right-decoration {
 	position: absolute;
 	top: 0;
@@ -382,7 +388,7 @@ img {
 }
 
 .title h1 {
-	font-family: 'Bakbak One', cursive;
+	font-family: 'kalam', sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 60px;
@@ -402,7 +408,7 @@ img {
 }
 
 .dance-med {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'kalam', sans-serif;
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 16px;
@@ -631,6 +637,7 @@ a {
 	display: flex;
 	font-size: 32px;
 	letter-spacing: 0pt;
+	font-family: 'kalam', sans-serif;
 	justify-content: center;
 	
 }
